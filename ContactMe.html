@@ -20,36 +20,38 @@
       </nav>
     </header>
 
-    <div class="container">
-      <h2>Get in Touch!</h2>
-      <form action="https://formspree.io/f/xkgjgkvk" method="POST">
-        <div class="row">
-          <label for="name" class="label-lg">Name:</label>
-          <input type="text" name="name" class="input-lg" required />
+    <main>
+      <div class="container">
+        <h2>Get in Touch!</h2>
+        <form action="https://formspree.io/f/xkgjgkvk" method="POST">
+          <div class="row">
+            <label for="name" class="label-lg">Name:</label>
+            <input type="text" name="name" class="input-lg" required />
 
-          <label for="email" class="label-lg">Email:</label>
-          <input type="email" name="email" class="input-lg" required />
-        </div>
+            <label for="email" class="label-lg">Email:</label>
+            <input type="email" name="email" class="input-lg" required />
+          </div>
 
-        <div class="message-area">
-          <label for="message">Contact Me Here!</label>
-          <textarea
-            class="message"
-            name="message"
-            placeholder="Leave a comment or question here."
-            required
-          ></textarea>
-        </div>
-        <div class="button-bar">
-          <button class="btn-dark" type="submit">Send</button>
-        </div>
-        <input
-          name="subject"
-          type="hidden"
-          value="New submission from {{name}}"
-        />
-      </form>
-    </div>
+          <div class="message-area">
+            <label for="message">Contact Me Here!</label>
+            <textarea
+              class="message"
+              name="message"
+              placeholder="Leave a comment or question here."
+              required
+            ></textarea>
+          </div>
+          <div class="button-bar">
+            <button class="btn-dark" type="submit">Send</button>
+          </div>
+          <input
+            name="subject"
+            type="hidden"
+            value="New submission from {{name}}"
+          />
+        </form>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer>

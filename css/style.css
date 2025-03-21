@@ -11,13 +11,10 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Times New Roman", Times, serif;
   background-color: bisque;
-}
-
-img {
-  width: 100%;
-  height: auto;
+  min-height: 100vh;
 }
 
 /* HEADER */
@@ -43,7 +40,7 @@ header a {
 }
 
 .menu a {
-  color: rgb(159, 180, 180);
+  color: rgb(77, 86, 86);
 }
 
 .menu {
@@ -64,7 +61,7 @@ header a {
 }
 
 .menu li a:hover {
-  color: rgb(204, 226, 226);
+  color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -73,11 +70,16 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(137, 138, 139);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25)
+    ),
+    url(../img/tweed.webp);
   padding: 0;
   bottom: 0;
   width: 100%;
   justify-content: center;
+  margin-top: auto;
 }
 
 footer a {
@@ -85,7 +87,7 @@ footer a {
 }
 
 .closer a {
-  color: rgb(61, 67, 67);
+  color: rgb(0, 0, 0);
 }
 
 .closer {
@@ -106,7 +108,7 @@ footer a {
 }
 
 .closer li a:hover {
-  color: rgb(204, 226, 226);
+  color: rgb(162, 162, 162);
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -115,9 +117,15 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
   footer {
-    padding: 2rem;
+    padding: 1rem;
     padding-top: 0;
     position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }
